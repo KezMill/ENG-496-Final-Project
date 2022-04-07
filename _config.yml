@@ -15,7 +15,7 @@ url: "https://kezmill.github.io/ENG-496-Final-Project/"
 
 ### Contact
 
-project_pi: Grace Doe and Felicity Smith # This can be one or multiple names and will be listed in the footer by default
+project_pi: Kezia Miller
 twitter_username: AWWRecoveryHub # twitter name of the Recovery Hub
 github_username:  recoveryhub # github name of the Recovery Hub
 
@@ -72,7 +72,6 @@ defaults:
       layout: default
       category: documentation
 # Pages to add to navigation
-# you can alternately add pages to navigation via frontmatter
   - scope:
       path: "about.md"
     values:
@@ -82,13 +81,17 @@ defaults:
     values:
       navigation: "true"
   - scope:
-      path: "docs/README.md"
+      path: "essay/Biographical Context"
     values:
-      navigation: "true"
+      navigation: "Biographical Context"
   - scope:
-      path: "docs/listing.html"
+      path: "essay/Textual History"
     values:
-      navigation: "true"
+      navigation: "Textual History"
+      - scope:
+      path: "essay/Transcriptions"
+    values:
+      navigation: "Transcriptions"
 
 # Build settings
 theme: minima
