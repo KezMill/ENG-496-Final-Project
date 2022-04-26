@@ -1,5 +1,5 @@
 ---
-title: Kezia
+title: Home
 ---
 
 Home Page
