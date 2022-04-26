@@ -134,7 +134,7 @@ up to the old hill to see the big steamer
 <span style="color: #70AD47">Anerley London</span>. Then Lewis and Bessie and us  
 three girls went aboard, the first ocean steamer  
 I was ever on. All of Jack’s and Uncle Andrew   
-and Aunt <span style="color: #D60093">Tilida</span> were over this afternoon.  
+and Aunt <span style="color: #D60093">Tilida</span>[^2] were over this afternoon.  
 
 
 [^1]: Correct spelling: **sitting**
