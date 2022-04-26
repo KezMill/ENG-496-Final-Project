@@ -1,1 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="A pedagogical resource for the life and works of Frederick Douglass" />
+        <meta name="author" content="Howard Rambsy et al" />
+        <title>ENG 496 Recovery Project</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="https://iris.siue.edu/douglass-dev/css/styles.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style type="text/css">
+body {
+	margin: 0 auto;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.wrapper {
+	overflow: auto;
+	width: 1100px;
+}
+header {
+    text-align: center;
+    height: 200px;
+    color: #fff;
+    border-bottom: 1px solid #000000;
+    border-top: 1px solid #000000;
+    margin-bottom: 15px;
+    -webkit-box-shadow: 0px 0px 0 0px rgba(0, 0, 0, 0.55);
+    background-position: 50% 30%;
+    background-image: url("images/signature.png");
+    background-repeat: no-repeat, repeat;
+    background-position: 50% center, 50% bottom;
+    background-size: auto 75%, auto auto;
+    background-color: #FEF7EE;
+	}
+header h2 {
+    margin-top: 1em;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    text-shadow: 0px 0px 12.48px rgba(0, 0, 0, 0.5);
+    color: #000000;
+    line-height: 0.8em;
+    font-family: dorsa;
+    font-size: 100px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+	
+header p {
+	margin: 0;
+	line-height: 5em;
+	font-family: LucidaGrande;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 400;
+	text-shadow: 0px 3px 4px rgba(0, 0, 1, 0.38);
+	letter-spacing: .5em;
+}
+nav {
+    background-color: #FFFFFF;
+    text-align: center;
+    -webkit-box-shadow: inset 1px 3px 3px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 3px 3px 0px rgba(0, 0, 0, 0.3);
+    margin-bottom: 3px;
+}
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+nav ul li {
+	margin: 0;
+	display: inline-block;
+}
+nav ul li a:link  , nav ul li a:visited{
+    padding-top: 0.5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+    display: block;
+    text-decoration: none;
+    border: 1px solid #9A4D24;
+    color: #9A4D24;
+    font-family: dorsa;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 22px;
+    text-shadow: 0.5px 0 0 rgba(0, 0, 0, 0.5);
+    font-style: normal;
+}
+.logowhite {
+	color: #FFF;
+}
+main {
+	overflow: auto;
+}
+main aside {
+    padding: 10px;
+    width: 20%;
+    border-bottom: 1px solid #000000;
+    border-top: 1px solid #000000;
+    min-height: 150px;
+    font-size: 90%;
+}
+main aside h2 {
+    font-size: 120%;
+    text-align: center;
+}
+main > section {
+    width: 58%;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding-top: 20px;
+    padding-right: 0;
+    padding-bottom: 10px;
+    margin-right: 1%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    padding-left: 5px;
+}
+main section h1 {
+    margin-top: 5px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 5px;
+    font-size: 70px;
+    font-family: dorsa;
+    color: #000000;
+    font-weight: 400;
+    line-height: 22px;
+    font-style: normal;
+    padding-bottom: 15px;
+}
+main section article h2 {
+    font-size: 40px;
+    font-family: dorsa;
+    color: #9A4D24;
+    font-weight: 400;
+    line-height: 22px;
+    font-style: normal;
+}
+main section article h3 {
+    color: #AD8686;
+    font-family: dorsa;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 22px;
+}
+
+h6{
+	font-size: 30px;
+    font-family: dorsa;
+    color: #9A4D24;
+    font-weight: 400;
+    line-height: 22px;
+    font-style: normal;	
+	}
+
+main section article p {
+    font-family: dorsa;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    font-style: normal;
+}
+
+.sidebar1 {
+	 float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(202,176,153,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(202,176,153,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(202,176,153,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(255,255,255,1.00) 0%,rgba(202,176,153,1.00) 100%);
+}
+
+.sidebar1 p {
+	margin: 0 0 .5em 0;
+	font-family: 'Source Sans Pro';
+	color: #000000;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 22px;
+}
+
+.sidebar2 {
+    float: right;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-image: url(url), -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(202,176,153,1.00) 100%);
+    background-image: url(url), -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(202,176,153,1.00) 100%);
+    background-image: url(url), -o-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(202,176,153,1.00) 100%);
+    background-image: url(url), linear-gradient(180deg,rgba(255,255,255,1.00) 0%,rgba(202,176,153,1.00) 100%);
+}
+.sidebar2 p {
+	margin: 0 0 .5em 0;
+	font-family: 'Source Sans Pro';
+	color: #000000;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 22px;
+}
+
+}
+footer {
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    clear: both;
+    margin: 10px 0;
+    background-color: #FFFFFF;
+    font-size: 90%;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+footer p {
+    margin: 0 0 5px 0;
+    color: #000000;
+    font-family: dorsa;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 20px;
+}
+</style>
+<style>
+.modal {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 200px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+		position: relative;
+		background-color: #fefefe;
+		margin: auto;
+		padding: 0;
+		border: 1px solid #888;
+		width: 80%;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0);
+}
+
+.close {
+		color: floralwhite;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+}
+
+.modal-header {
+		padding: 2px 16px;
+		background-color: indianred;
+		color: floralwhite;
+}
+
+.modal-body {padding: 2px 16 px;}
+
+.modal-footer {
+		padding: 2px 16px
+		background-color: indianred;
+		color: floralwhite;
+}
+
+</style>
+   <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/dorsa:n4:default;montserrat:n4:default.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div class="wrapper">
+<nav>
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="#">AUTHORIAL BIOGRAPHY</a></li>
+<li><a href="#">SOCIO-HISTORICAL CONTEXT</a></li>
+<li><a href="#">EDITORIAL COMMENTARY</a></li>
+<li><a href="#">TRANSCRIPTIONS</a></li>
+</ul>
+</nav>
+<header>
+<h2></h2>
+</header>
+<main>
+<aside class="sidebar1">
+	<h2>STYLE GUIDE</h2>
+<img src="images/.styleguide.png"
+width="100%" alt="Kezia"/> 
+</aside>
+<br>
+<section>
+	
+<h1>APRIL 1911</h1>
+
+<div class="container">
+
+<p>[1]</p>
+<h6>WEDNESDAY</h6>
+<p><strong>April 12<sup><u><i>th</i></u></sup></strong> Well, here I am starting another book<br>
+of my life <span style="color: #CC00FF ">[</span>,<span style="color: #CC00FF ">]</span> I hope it will be as interesting as<br>
+the first one is. I will now proceed to tell the<br>
+events of the day. First thing on the program,<br>
+Bessie and I went down on the <button class="modal-button" href="#myModal1"><span style="color: #70AD47">beach</span></button>. I read in a<br>      
+book, Bessie wrote a letter, we also went to the<br>  
+store for the mail (not male.) This evening Sollie<br>  
+cut Bessie’s and my hair, Don’t we look like seven<br>   
+hundred dollars though? Ha! Ha! Lottie and I walked<br> 
+up to the store this evening, quite a time, we had.<br></p> 
+	
+
+<h6>THURSDAY</h6>    
+<p><strong>April 13<sup><u><i>th</i></u></sup></strong> Bessie, Lester and I walked over to Georgetown<br>
+to go to South Bend with the Indians in their<br>  
+launch but they didn’t go, so we walked to<br>   
+<button class="modal-button" href="#myModal2"><span style="color: #70AD47">Tokeland</span></button> and went on the <button class="modal-button" href="#myModal3"><span style="color: #70AD47">Shamrock</span></button>. Walked<br> 
+six miles in one hour. <button class="modal-button" href="#myModal4"><span style="color: #A50021">Going some</span></button>. Oh, that<br>   
+Kit Mooney is a <button class="modal-button" href="#myModal5"><span style="color: #A50021">rustler</span></button> alright. Mooney came<br>   
+up to Ev’s for supper, then we four walked<br>   
+down <button class="modal-button" href="#myModal6"><span style="color: #70AD47">Broadway</span></button>.<br></p> 
+
+<p>[2]</p>  
+
+<h6>FRIDAY</h6>    
+<p><strong>April 14<sup><u><i>th</i></u></sup></strong> We came back to <span style="color: #70AD47">North Cove</span> this A.M.<br>   
+Worked in the <button class="modal-button" href="#myModal8"><span style="color: #70AD47">cannery</span></button>. Lottie and I went up to<br>   
+the store. Had quite a time talking politics.<br></p>   
+
+<h6>SATURDAY</h6>    
+<p><strong>April 15<sup><u><i>th</i></u></sup></strong> Worked awful had to-day, didn’t hurt<br>   
+myself any though.<br></p>
+
+<h6>SUNDAY</h6>    
+<p><strong>April 16<sup><u><i>th</i></u></sup></strong> To-day is Easter Sunday and the wonderful<br>   
+<button class="modal-button" href="#myModal9"><span style="color: #FF0000">base ball game</span></button> was played at Tokeland. North Cove<br>    
+got beat. The score was 11 to 7. Bessie and I didn’t<br>   
+go, we walked up to Smiths and to Georgetown.<br>  
+Worked in the cannery this A.M.<br></p>
+
+<h6>MONDAY</h6>    
+<p><strong>April 17<sup><u><i>th</i></u></sup></strong> Worked to-day. Helen and I went up to<br>  
+Anderson’s and coming home we went over to the<br>  
+<button class="modal-button" href="#myModal10"><span style="color: #70AD47">Bachlors Hall</span></button> and looked in at the window and<br>   
+watched them make doughnuts. We threw a piece<br>  
+of wood in a hole in the window and scared<br>   
+them half to death. They caught us and washed<br>  
+our faces with flour.<br></p> 
+
+<h6>TUESDAY</h6>    
+<p><strong>April 18<sup><u><i>th</i></u></sup></strong> Worked to-day. Went to town with<br></p>   
+
+<p>[3]</p>
+
+<p>Bessie, then Lottie wanted me to go with her after<br>  
+I got back. Was out to the bon-fire for about a<br>  
+half a second.<br></p>
+
+<h6>WEDNESDAY</h6>    
+<p><strong>April 19<sup><u><i>th</i></u></sup></strong> Worked again to-day. Helen, Bessie and I<br>  
+went to the <em>store</em>, stopped at the swing a while.<br>
+Sollis, Tubby, Bessie, Mooney and I had quite a<br>  
+bit of excitement in the kitchen this evening.<br></p>   
+
+<h6>THURSDAY</h6>    
+<p><strong>April 20<sup><u><i>th</i></u></sup></strong> Didn’t work to-day. I was down on the<br>  
+beach all alone. Was over talking to Lottie across<br>  
+the fence, Bessie and I <button class="modal-button" href="#myModal11"><span style="color: #D60093">setting</span></button> out by a log, we also<br>  
+went to town, got lost in woods coming<br>  
+back. Ha! Ha! That Casey is just crazy over<br>   
+me. That’s the first I knew about it.<br></p> 
+
+<h6>FRIDAY</h6>  
+<p><strong>April 21<sup><u><i><span style="color: #FF9900">th</span></i></u></sup></strong> Didn’t work again to-day. Got a card<br> 
+from Ott telling us to come home as the Kits<br>   
+have the measles. So here we are again in South<br>  
+Bend. Wonderful city, <span style="color: #FF9900">that</span><br></p> 
+
+<h6>SATURDAY</h6>    
+<p><strong>April 22<sup><u><i><span style="color: #FF9900">th</span></i></u></sup></strong> Clerked at Stoppleman’s  all day.<br></p>
+
+<p>[4]</p>
+
+<p>Do not like to clerk very well. Got home at<br>  
+11 o’clock. Phil brought me to the gate.<br></p> 
+
+<h6>SUNDAY</h6>    
+<p><strong>April 23<sup><u><i><span style="color: #FF9900">th</span></i></u></sup></strong> Did not go any place to-day.<br>   
+	Stayed at home and <button class="modal-button" href="#myModal7"><em>rested</em></button>. All of Mr.<br>   
+Vermillion’s came over and Lewis for<br>  
+a while. I guess he went off sore, but<br>  
+who cares, I don’t. Bessie and I went<br>  
+up on a hill over by Monohan’s. We<br>  
+got scared and came down pretty fast.<br>   
+Both fell down.<br></p>
+
+<h6>MONDAY</h6>     
+<p><strong>April 24<sup><u><i>th</i></u></sup></strong> Went down town. Helped<br>  
+wash, dyed my <button class="modal-button" href="#myModal12"><span style="color: #A50021">riding skirt</span></button> black.<br>  
+Bessie and I went for a walk, <button class="modal-button" href="#myModal13"><span style="color: #CC00FF ">[</span>Laurence<span style="color: #CC00FF ">]</span></button>  
+scared us coming back.<br></p>  
+
+<h6>TUESDAY</h6>    
+<p><strong>April 25<sup><u><i>th</i></u></sup></strong> Helped iron and made me a black<br>  
+<button class="modal-button" href="#myModal14"><span style="color: #A50021">shirt waist</span></button> in 2 ½ hrs. <span style="color: #A50021">Going some</span>.<br></p> 
+
+<h6>WEDNESDAY</h6>    
+<p><strong>April 26<sup><u><i>th</i></u></sup></strong> Stayed at home all day. Lewis,<br>  
+Marguerite and Rebecca were over this eve.<br></p> 
+
+<p>[5]</p>
+
+<p>Marguerite and Rebecca, Laurence and I were over to<br>  
+Monohan’s this eve.<br></p>
+
+<h6>THURSDAY</h6>    
+<p><strong>April 27<sup><u><i>th</i></u></sup></strong> Bessie and I and Laurence climbed a<br>   
+hill this eve. Phil, Marguerite and Rebecca<br>   
+were over.<br></p> 
+
+<h6>FRIDAY</h6>    
+<p><strong>April 28<sup><u><i>th</i></u></sup></strong> Phil, Laurence, Marguerite, Rebecca<br> 
+and I climbed a hill this eve.<br></p>  
+
+<h6>SATURDAY</h6>    
+<p><strong>April 29<sup><u><i>th</i></u></sup></strong> Bessie and I went to town three<br>   
+times to-day. Went over to the cannery.<br></p>  
+
+<h6>SUNDAY</h6>    
+<p><strong>April 30<sup><u><i>th</i></u></sup></strong> Marguerite, Rebecca and I walked<br>  
+up to the old hill to see the big steamer<br>  
+<button class="modal-button" href="#myModal15"><span style="color: #70AD47">Anerley London</span></button>. Then Lewis and Bessie and us<br>  
+three girls went aboard, the first ocean steamer<br>  
+I was ever on. All of Jack’s and Uncle Andrew<br>   
+and Aunt<button class="modal-button" href="#myModal16"><span style="color: #D60093">Tildia</span></button> were over this afternoon.<br></p> 
+
+ 
+<div id="myModal1" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Bessie on the Beach</h2>
+    </div>
+    <div class="modal-body">
+	<img src="images/.modal1.jpg" alt="Bessie on the Beach " height="50%" width="75%"  style="object-fit: cover">
+      <p>The date and year of the photograph is unknown; however, this is Bessie, more than likely sitting on beach in close proximity to South Bend, Washington. In 1911, Bessie was 24 years old. If you view the photos of Bessie I provide under “Authorial Biography,” you can see how this photo may have been taken roughly the same time Kezia wrote her entries.</p>
+    </div>
+  </div>
+</div>
+
+<div id="myModal2" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Georgetown to Tokeland</h2>
+    </div>
+    <div class="modal-body">
+	<img src="images/.modal2.jpg" alt="Georgetown to Tokeland" height="50%" width="75%"  style="object-fit: cover">
+      <p>Content</p>
+    </div>
+  </div>
+</div>
+
+<div id="myModal3" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>The Shamrock</h2>
+    </div>
+    <div class="modal-body">
+<img src="images/.modal.3.jpg" alt="Shamrock in South Bend" height="75%" width="50%"  style="object-fit: cover">
+<img src="images/.modal3trip.jpg" alt="Tokeland to Southbend" height="50%" width="75%"  style="object-fit: cover">
+<p><stong>Dock Scene: Shamrock from Tokeland to South Bend</stong></p>
+<img src="images/.modal3.jpg" alt="Tokeland Dock" height="50%" width="65%"  style="object-fit: cover">
+<p><em>Tokeland, WA (c.1914)</em></p>
+		
+  <p>The Willapa Harbor Transportation Company had been established by 1902 and was headed by Captain A.W. Reed. Commissioned by Reed, the Shamrock was built in Astoria, Oregon, made small enough to carry freight, mail, and passengers daily between Nahcotta, South Bend and Tokeland, Washington. The Shamrock sometimes carried as many as 500 persons in a single day with a capacity of 150-160 persons per trip.</p> 
+
+<p>The trip between South Bend and Tokeland took roughly fifteen minutes, and cost $.65 (In 2022, that’s approximately $17 per trip).</p>
+		
+<p><cite><a href="https://www.facebook.com/PacificCountyHistoricalSociety/photos/a.643988188995585/3332631836797860/" style="text-decoration: none;" target="_blank" class="externallink">Works Cited</a></cite>:"The Sou'wester" published by the Pacific County Historical Society (issues "Autumn 1971” and “Summer 1990).</p>
+    </div>
+  </div>
+</div>
+
+<div id="myModal4" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>“Going Some”</h2>
+    </div>
+    <div class="modal-body">
+      <p>A expression used in the early 1900s: the acknowledgement of a high level of achievement.</p>
+    </div>
+  </div>
+</div>
+
+
+<div id="myModal5" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>“rustler”</h2>
+    </div>
+    <div class="modal-body">
+      <p>noun. an energetic or vigorous person.</p>
+    </div>
+  </div>
+</div>
+
+<div id="myModal6" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Broadway </h2>
+    </div>
+    <div class="modal-body">
+      <p>Content</p>
+    </div>
+  </div>
+</div>
+
+
+<div id="myModal8" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>South Bend Salmon and Oyster Canneries </h2>
+    </div>
+    <div class="modal-body">
+      <p>Content</p>
+    </div>
+  </div>
+</div>
+
+<div id="myModal9" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>South Bend Baseball Team</h2>
+    </div>
+    <div class="modal-body">
+	<img src="images/.modal9.jpg" alt="South Bend Baseball Game" height="50%" width="75%"  style="object-fit: cover">
+	<p><em>South Bend Baseball Team</em></p>
+	<img src="images/.modal9hotel.jpg" alt="South Bend Baseball Team" height="75%" width="65%"  style="object-fit: cover">
+<p>The first photo is of the South Bend baseball team playing a game against (?). The second photo is of the loacl team in front of the Pioneer Hotel (or known as The Cresent Hotel). The year and date for both photograph are unknown</p>
+    </div>
+  </div>
+</div>
+
+<div id="myModal10" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Bachlors Hall</h2>
+    </div>
+    <div class="modal-body">
+      <p>Content</p>
+    </div>
+  </div>
+</div>
+
+
+<div id="myModal11" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Spelling: "setting"</h2>
+    </div>
+    <div class="modal-body">
+      <p><img src="images/.modal11.jpg" alt="spelling: setting" height="50%" width="75%"  style="object-fit: cover"></p>
+    </div>
+  </div>
+</div>
+
+
+<div id="myModal7" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Kezia Emendation:"rested"</h2>
+    </div>
+    <div class="modal-body">
+     <p><img src="images/.modal7.jpg" alt="K emendation: rested" height="50%" width="75%"  style="object-fit: cover"></p>
+    </div>
+  </div>
+</div>
+	
+<div id="myModal12" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Riding Skirt</h2>
+    </div>
+    <div class="modal-body">
+<p><img src="images/.modal12.jpg" alt="riding skirt" height="50%" width="75%"  style="object-fit: cover"></p>
+	
+<p>insert content</p>
+<p><cite><a href="https://www.pinterest.com/pin/558516791264759782/" target="_blank" class="externallink">Image Works Cited</a></cite></p>
+    </div>
+  </div>
+</div>
+
+
+<div id="myModal13" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Questionable Reading: Laurence</h2>
+    </div>
+    <div class="modal-body">
+      <p><img src="images/.modal13.jpg" alt="Questionable Reading: Laurence" height="50%" width="75%"  style="object-fit: cover"></p>
+    </div>
+  </div>
+</div>
+
+
+<div id="myModal14" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Shirt Waist</h2>
+    </div>
+    <div class="modal-body">
+	<img src="images/.modal14.jpg" alt="shirt waist" height="75%" width="50%"  style="object-fit: cover">
+	<p><em>1910s Shirt Waist</em></p>
+	<img src="images/.modal14k.jpg" alt="Kezia wearing shirt waist" height="75%" width="50%"  style="object-fit: cover">
+	<p><em>Circa 1929: Kezia wearing a shirt waist</em></p>
+	
+      <p> A Shirt Waist was....</p>
+	
+	<p><cite><a href="https://witness2fashion.wordpress.com/2019/05/30/what-made-a-blouse-a-shirt-waist-in-1909-1910-i-dont-know/" target="_blank" class="externallink">Image Works Cited</a></cite></p>
+    </div>
+  </div>
+</div>
+
+
+<div id="myModal15" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Anerley London</h2>
+    </div>
+    <div class="modal-body">
+<img src="images/.modal15.jpg" alt="Anerley Ship" height="50%" width="100%"  style="object-fit: cover">
+		
+      <p>historical information</p>
+		
+<p><cite><a href="https://www.wrecksite.eu/wreck.aspx?156675" target="_blank" class="externallink">Image Works Cited</a></cite></p>
+    </div>
+  </div>
+</div>
+
+	<div id="myModal16" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Spelling: Tildia</h2>
+    </div>
+    <div class="modal-body">
+      <p><img src="images/.modal16.jpg" alt="spelling: Tilida" height="50%" width="75%"  style="object-fit: cover"></p>
+	<p>Throughout the entries, Kezia uses the correct spelling "Tilda"</p>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+	
+<aside class="sidebar2">
+<h2>&nbsp;Frances Kezia Parkins</h2>
+<img src="images/kezia.jpg"
+width="100%" alt="Kezia"/> 
+<p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kezia in 1929</em></p>
+<p></p>
+</aside>
+</main>
+<footer>
+<p>FOOTER INFOR</p>
+</footer>
+
+<script>
+// Get the button that opens the modal
+var btn = document.querySelectorAll("button.modal-button");
+
+// All page modals
+var modals = document.querySelectorAll('.modal');
+
+// Get the <span> element that closes the modal
+var spans = document.getElementsByClassName("close");
+
+// When the user clicks the button, open the modal
+for (var i = 0; i < btn.length; i++) {
+ btn[i].onclick = function(e) {
+    e.preventDefault();
+    modal = document.querySelector(e.target.getAttribute("href"));
+    modal.style.display = "block";
+ }
+}
+
+// When the user clicks on <span> (x), close the modal
+for (var i = 0; i < spans.length; i++) {
+ spans[i].onclick = function() {
+    for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
+    }
+ }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+     for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
+     }
+    }
+}
+</script>
+</div>
+     </body>
+     </html>
 
