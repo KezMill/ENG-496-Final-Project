@@ -4,10 +4,9 @@
 
 ### Site Information
 
-title: Edition Title
-tagline: An edition of various texts
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut eleifend justo. Quisque gravida est a quam ultrices posuere. Suspendisse potenti. Morbi in metus malesuada, facilisis neque at, ornare lorem. Vestibulum augue eros, consectetur nec rhoncus eu, rhoncus at urna. # Shows up in the footer by default
-
+title: Frances Kezia Parkins
+tagline: Recovering the Diary of Kezia 
+description: This is a recovery project for ENG 496. 
 ### Site Structure
 
 baseurl: "/ENG-496-Final-Project/"
