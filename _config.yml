@@ -80,9 +80,9 @@ defaults:
     values:
       navigation: "true"
   - scope:
-      path: "essay/Biographical Context"
+      path: "april.html"
     values:
-      navigation: "Biographical Context"
+      navigation: "April Transcription"
   - scope:
       path: "essay/Textual History"
     values:
