@@ -137,6 +137,8 @@ I was ever on. All of Jack’s and Uncle Andrew
 and Aunt <span style="color: #D60093">Tilida</span>[^2] were over this afternoon.  
 
 
+[Click here for Textual Modal](file:///C:/Users/kezia/OneDrive/Desktop/Final%20Project/.april_modal.html)
+
 [^1]: Correct spelling: **sitting**
 [^2]: Correct spelling: **Tilda**, this is how Kezia spells her Aunt's name throughout the remaining of the diary.
 
