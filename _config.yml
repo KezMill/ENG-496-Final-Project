@@ -80,17 +80,17 @@ defaults:
     values:
       navigation: "true"
   - scope:
-      path: "april.html"
+      path: "april.md"
     values:
-      navigation: "April Transcription"
+      navigation: "true"
   - scope:
-      path: "essay/Textual History"
+      path: "may.md"
     values:
-      navigation: "Textual History"
+      navigation: "true"
       - scope:
-      path: "essay/Transcriptions"
+      path: "june.md"
     values:
-      navigation: "Transcriptions"
+      navigation: "true"
 
 # Build settings
 theme: minima
