@@ -137,7 +137,7 @@ I was ever on. All of Jack’s and Uncle Andrew
 and Aunt <span style="color: #D60093">Tilida</span> were over this afternoon.  
 
 
-[^1]: Correct Spelling: **sitting**
-
+[^1]: Correct spelling: **sitting**
+[^2]: Correct spelling: **Tilda**, this is how Kezia spells her Aunt's name throughout the remaining of the diary.
 
 
